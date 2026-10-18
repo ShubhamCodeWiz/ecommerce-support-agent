@@ -1,0 +1,40 @@
+[project]
+name = "pydantic-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ShubhamCodeWiz", email = "ShubhamChauhan.CodeOS@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.31.0",
+    "fastapi[standard]>=0.141.1",
+    "logfire>=5.1.0",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic-ai[groq]>=2.49.0",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.15.0",
+    "python-dotenv>=1.2.3",
+    "python-multipart>=0.0.32",
+    "sqlalchemy[asyncio]>=2.1.1",
+]
+
+[project.scripts]
+pydantic-ai-agent = "pydantic_ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
