@@ -2,8 +2,7 @@
 
 > A customer-support AI agent built with **Pydantic AI + FastAPI + PostgreSQL**. It only ever touches the logged-in customer's data, refunds need an explicit confirmation before anything changes, and conversation state survives pauses, crashes and concurrent requests.
 
-<!-- Add a 60-90 second screen recording or GIF here. It is the most valuable part of this README. -->
-![Demo](<<VERIFY: link to your demo GIF or video>>)
+
 
 ## What it does
 
